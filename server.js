@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -40,7 +39,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log("Server running on port", PORT);
 }); 
-=======
+
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -78,4 +77,4 @@ app.post("/generate", (req, res) => {
 app.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });
->>>>>>> a9d5dfc0e7c122cc3b06040e78fa5fc76aaaf035
+
