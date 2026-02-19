@@ -8,7 +8,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+<<<<<<< HEAD
 app.use(express.static("public"));
+=======
+>>>>>>> c9d00f92802d2ef3853d24cbfbc1fcc0ccbd3c73
 
 // Test route
 app.get("/test", (req, res) => {
