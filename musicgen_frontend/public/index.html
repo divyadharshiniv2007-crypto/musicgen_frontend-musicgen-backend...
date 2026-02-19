@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MuseBot</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h1 class="title">
+    <span class="muse">Muse</span><span class="bot">Bot</span>
+  </h1>
+
+  <p class="subtitle">Create music based on your mood 🎶</p>
+
+  <div class="mood-container">
+    <button class="mood happy" onclick="selectMood('happy upbeat instrumental music')">Happy</button>
+    <button class="mood sad" onclick="selectMood('sad emotional instrumental music')">Sad</button>
+    <button class="mood calm" onclick="selectMood('calm relaxing instrumental music')">Calm</button>
+    <button class="mood energetic" onclick="selectMood('energetic fast instrumental music')">Energetic</button>
+    <button class="mood romantic" onclick="selectMood('romantic soft instrumental music')">Romantic</button>
+  </div>
+
+  <button onclick="generateMusic()">Generate Music</button>
+
+  <audio id="player" controls></audio>
+
+  <script src="index.js"></script>
+</body>
+</html>

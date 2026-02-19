@@ -1,0 +1,122 @@
+/* Page Background */
+body {
+  background: linear-gradient(
+    120deg,
+    #ffecd2,
+    #fcb69f,
+    #a1c4fd,
+    #c2e9fb,
+    #d4fc79,
+    #96e6a1
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Smooth moving background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* App Title */
+.title {
+  font-size: 64px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+/* MuseBot Gradient Text */
+.muse {
+  background: linear-gradient(45deg, #7f00ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bot {
+  background: linear-gradient(45deg, #ff512f, #f09819);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+/* Mood Shapes Container */
+.mood-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Mood Shape Base */
+.mood {
+  padding: 18px 32px;
+  border-radius: 45px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mood:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.3);
+}
+
+/* Individual Mood Colors */
+.happy {
+  background: linear-gradient(45deg, #ffe53b, #ff2525);
+}
+
+.sad {
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+
+.calm {
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+}
+
+.energetic {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.romantic {
+  background: linear-gradient(45deg, #f857a6, #ff5858);
+}
+
+/* Generate Button */
+button {
+  padding: 14px 38px;
+  font-size: 17px;
+  border: none;
+  border-radius: 35px;
+  background: linear-gradient(45deg, #7f00ff, #00c6ff);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* Audio Player */
+audio {
+  display: block;
+  margin: 40px auto;
+}
