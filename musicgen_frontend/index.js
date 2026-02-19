@@ -13,7 +13,7 @@ async function generateMusic() {
 
   console.log("Sending to backend:", selectedMood);
 
-  const response = await fetch("http://localhost:3000/generate", {
+  const response = await fetch("https://musicgen-frontend-musicgen-backend-4.onrender.com/generate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

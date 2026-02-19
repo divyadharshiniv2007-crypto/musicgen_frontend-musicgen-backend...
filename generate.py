@@ -17,3 +17,4 @@ audio_write(
     audio[0].cpu(),
     model.sample_rate,
     strategy="loudness"
+)
